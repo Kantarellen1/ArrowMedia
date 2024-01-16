@@ -26,7 +26,7 @@ namespace LoginForm
         {
             if (txtUserName.Text=="your_user_name" && txtPassword.Text=="your_password")
             {
-                new Form2().Show();
+                new Interface().Show();
                 this.Hide();
             }
 
