@@ -12,6 +12,7 @@ namespace LoginForm
 {
     public partial class Interface : Form
     {
+        bool sidebarExpand;
         public Interface()
         {
             InitializeComponent();
@@ -65,6 +66,33 @@ namespace LoginForm
         private void button1_Click_2(object sender, EventArgs e)
         {
 
+        }
+
+        private void sidebarTimer_Tick(object sender, EventArgs e)
+        {
+            if (sidebarExpand)
+            {
+                sidebar.Width -= 10;
+                if(sidebar.Width == sidebar.MinimumSize.Width)
+                {
+                    sidebarExpand = false;
+                    sidebarTimer.Stop();
+                }
+            }
+            else
+            {
+                sidebar.Width += 10;
+                if (sidebar.Width == sidebar.MaximumSize.Width)
+                {
+                    sidebarExpand = true;
+                    sidebarTimer.Stop();
+                }
+            }
+        }
+
+        private void MenuButton_Click(object sender, EventArgs e)
+        {
+            sidebarTimer.Start();
         }
     }
 }
