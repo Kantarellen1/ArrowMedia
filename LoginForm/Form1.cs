@@ -24,7 +24,7 @@ namespace LoginForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtUserName.Text=="your_user_name" && txtPassword.Text=="your_password")
+            if (txtUserName.Text=="123" && txtPassword.Text=="123")
             {
                 new Interface().Show();
                 this.Hide();

@@ -92,5 +92,23 @@
   <ItemGroup>
     <None Include="Resources\Logo.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ControllerButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SettingsButton.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
